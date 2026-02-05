@@ -22,15 +22,17 @@
 
   &--desktop {
     display: none;
-    @include mq("tablet") {
+    @include mq("desktop") {
       display: flex;
       align-items: center;
+      flex: 1;
+      justify-content: space-between;
     }
   }
 
   &--mobile {
     display: flex;
-    @include mq("tablet") {
+    @include mq("desktop") {
       display: none;
     }
   }
@@ -40,6 +42,8 @@
     display: block;
     @include mq("tablet") {
       width: 253px;
+      margin-right: 20px;
+      margin-left: 20px;
     }
   }
 
@@ -51,7 +55,7 @@
     flex-direction: column;
     padding: 0 40px;
 
-    @include mq("tablet") {
+    @include mq("desktop") {
       flex-direction: row;
     }
   }
@@ -61,10 +65,11 @@
     display: block;
     border-bottom: solid 1px $color-white;
     width: 100%;
-    @include mq("tablet") {
+    @include mq("desktop") {
       padding: 0 20px;
       border-bottom: none;
       width: auto;
+      text-align: center;
     }
   }
   &__link {
@@ -72,11 +77,16 @@
     font-weight: 600;
     color: $color-white;
     text-decoration: none;
+    text-transform: uppercase;
     transition: color 0.2s ease;
-    @include mq("tablet") {
+    &--active {
+      color: black;
+    }
+    @include mq("desktop") {
       color: $color-dark-blue;
       font-size: 16px;
       font-weight: 700;
+      text-transform: none;
 
       &:hover,
       &--active {

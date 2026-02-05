@@ -34,6 +34,7 @@
     display: flex;
     width: 100%;
     align-items: center;
+    justify-content: center;
     padding-top: 126px;
     padding-left: 40px;
     padding-right: 50px;
@@ -54,8 +55,12 @@
     justify-content: center;
     align-items: center;
     @include mq("tablet") {
+      padding-left: 30px;
       align-items: start;
       padding-top: 70px;
+    }
+    @include mq("desktop") {
+      padding-left: 0;
     }
   }
   &__title {

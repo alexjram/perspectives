@@ -13,6 +13,7 @@
   border: none;
   @include mq("tablet") {
     padding: 12px 45px;
+    white-space: nowrap;
   }
 
   &-transparent {
