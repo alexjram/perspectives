@@ -1,0 +1,46 @@
+@use "variables" as *;
+
+.benefits {
+  margin-bottom: 100px;
+  margin-left: 65px;
+  margin-right: 65px;
+  margin-top: 80px;
+
+  &__internal {
+    max-width: 912px;
+    margin: auto;
+    margin-top: 140px;
+  }
+
+  &__icon {
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-yellow;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include mq("tablet") {
+      justify-content: start;
+    }
+  }
+
+  &__title {
+    font-family: $font-secondary;
+    font-size: 20px;
+    line-height: 1.66;
+    margin-bottom: 0;
+  }
+  &__text {
+    margin-top: 10px;
+    letter-spacing: 0.16px;
+    line-height: 1.875;
+    text-align: center;
+  }
+}

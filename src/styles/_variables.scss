@@ -1,5 +1,25 @@
 @use "sass:map";
 
+// Font Families
+$font-primary: "Open-Sans", sans-serif;
+$font-secondary: "Publico", serif;
+
+// Colors
+$color-white: #ffffff;
+$color-dark-blue: #223747;
+$color-primary-blue: #5193c8;
+$color-primary-light: #5193cb;
+$color-secondary-blue: #73b0e0;
+$color-gray-light: #979797;
+$color-yellow: #f1c35e;
+
+// Gradients
+$gradient-primary: linear-gradient($color-primary-light, $color-secondary-blue);
+
+// Border Radius
+$border-radius-btn: 26px;
+
+// Breakpoints
 $breakpoints: (
   "tablet": 768px,
   "desktop": 1024px,

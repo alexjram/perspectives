@@ -1,13 +1,15 @@
 @use "variables" as *;
 .hero {
-  height: 100vh;
   background-color: white;
   background-image: url(../images/hero-bg.jpg);
   background-size: cover;
-  margin-bottom: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  @include mq("tablet") {
+    margin-bottom: 100px;
+  }
 
   &__overlay {
     background: url(../images/hero-overlay.svg);
@@ -16,9 +18,13 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-size: cover;
+    background-size: auto 120%;
     z-index: 0;
-    background-position: bottom;
+    background-position: top;
+    @include mq("tablet") {
+      background-size: cover;
+      background-position: bottom;
+    }
   }
   &__content {
     position: relative;
@@ -26,13 +32,61 @@
     color: white;
     max-width: 1024px;
     display: flex;
+    width: 100%;
     align-items: center;
+    padding-top: 126px;
+    padding-left: 40px;
+    padding-right: 50px;
+    padding-bottom: 70px;
+
+    @include mq("tablet") {
+      padding-top: 166px;
+      gap: 50px;
+      padding-left: 0;
+      padding-right: 0;
+      justify-content: space-between;
+    }
   }
   &__column_left {
     max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include mq("tablet") {
+      align-items: start;
+      padding-top: 70px;
+    }
+  }
+  &__title {
+    font-family: $font-secondary;
+    font-size: 31px;
+    font-weight: 700;
+    max-width: 400px;
+    @include mq("tablet") {
+      font-size: 45px;
+    }
+  }
+  &__text {
+    line-height: 1.875;
+    letter-spacing: 0.19px;
+    margin-bottom: 40px;
+    margin-top: 0;
   }
   &__image {
+    display: none;
     position: relative;
     z-index: 1;
+    margin-bottom: -150px;
+
+    @include mq("tablet") {
+      display: block;
+    }
+  }
+  &__bottom_button {
+    margin-top: 40px;
+    @include mq("tablet") {
+      display: none;
+    }
   }
 }

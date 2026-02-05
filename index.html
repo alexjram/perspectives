@@ -36,6 +36,12 @@
           </button>
         </nav>
         <div class="header__mobile_menu" id="mobile-menu">
+          <button
+            class="header__menu_toggle header__mobile_menu_close"
+            aria-label="Close menu"
+          >
+            <img src="./src/images/mobile-close.svg" alt="close menu" />
+          </button>
           <ul class="header__menu">
             <li class="header__item">
               <a href="#" class="header__link">Home</a>
@@ -56,16 +62,72 @@
         <div class="hero__overlay"></div>
         <div class="hero__content">
           <div class="hero__column_left">
-            <h1>Break free from your obsessions and compulsions</h1>
-            <p>
+            <h1 class="hero__title">
+              Break free from your obsessions and compulsions
+            </h1>
+            <p class="hero__text">
               Perspectives is a new therapy app for people with obsessieve
               compulsive disorder. It's been created by leading researchers at
               Massachusetts General Hospital as part of a research study, and is
               available at no cost to you.
             </p>
             <a href="#" class="btn">GET STARTED</a>
+            <button class="btn btn-transparent hero__bottom_button">
+              <img src="./src/images/back.svg" alt="go down" />
+            </button>
           </div>
-          <img src="./src/images/iphone-with-bg.png" alt="Iphone" />
+          <img
+            class="hero__image"
+            src="./src/images/iphone-with-bg.png"
+            alt="Iphone"
+          />
+        </div>
+      </section>
+      <section class="benefits" id="benefits-section">
+        <div class="benefits__internal">
+          <div class="carousel">
+            <div class="carousel__container">
+              <div class="carousel__slide benefits__item">
+                <div class="benefits__icon">
+                  <img
+                    src="./src/images/icon-not alone.svg"
+                    alt="not alone icon"
+                  />
+                </div>
+                <h3 class="benefits__title">You're not alone</h3>
+                <p class="benefits__text">
+                  OCD is common, affecting around 2% of the world's population.
+                </p>
+              </div>
+              <div class="carousel__slide benefits__item">
+                <div class="benefits__icon">
+                  <img
+                    src="./src/images/icon-your pace.svg"
+                    alt="your pace icon"
+                  />
+                </div>
+
+                <h3 class="benefits__title">At your own pace</h3>
+                <p class="benefits__text">
+                  You decide when to progress. The pace is set just for you at a
+                  speed you're comfortable with.
+                </p>
+              </div>
+              <div class="carousel__slide benefits__item">
+                <div class="benefits__icon">
+                  <img
+                    src="./src/images/icon-private.svg"
+                    alt="not alone icon"
+                  />
+                </div>
+                <h3 class="benefits__title">It's private</h3>
+                <p class="benefits__text">
+                  your coach just sees your messages and progress; everything
+                  else is only for you.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
