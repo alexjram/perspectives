@@ -6,7 +6,6 @@ export default function initMobileMenu() {
   const header = document.querySelector(".header");
 
   if (!mobileMenu || !mobileToggles.length) return;
-  console.log("has the menu and the toggle");
 
   mobileToggles.forEach((mt) =>
     mt.addEventListener("click", () => {
@@ -28,7 +27,7 @@ export default function initMobileMenu() {
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
     // Check initial scroll position
     handleScroll();
   }
