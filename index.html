@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>perspectives</title>
+  </head>
+  <body>
+    <main>
+      <header class="header">
+        <a href="#"
+          ><img
+            src="./src/images/logo.svg"
+            alt="Perspectives"
+            class="header__logo"
+        /></a>
+
+        <nav class="header--desktop">
+          <ul class="header__menu">
+            <li class="header__item">
+              <a href="#" class="header__link header__link--active">Home</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Obsessive Compulsive Disorder</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Cognitive Behavioural Therapy</a>
+            </li>
+          </ul>
+          <a href="#" class="btn">GET STARTED</a>
+        </nav>
+        <nav class="header--mobile">
+          <button class="header__menu_toggle" id="mobile-menu-toggle">
+            <img src="./src/images/menu-icon.svg" alt="open menu" />
+          </button>
+        </nav>
+        <div class="header__mobile_menu" id="mobile-menu">
+          <ul class="header__menu">
+            <li class="header__item">
+              <a href="#" class="header__link">Home</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Obsessive Compulsive Disorder</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Cognitive Behavioural Therapy</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">GET STARTED</a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <section class="hero">
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+          <div class="hero__column_left">
+            <h1>Break free from your obsessions and compulsions</h1>
+            <p>
+              Perspectives is a new therapy app for people with obsessieve
+              compulsive disorder. It's been created by leading researchers at
+              Massachusetts General Hospital as part of a research study, and is
+              available at no cost to you.
+            </p>
+            <a href="#" class="btn">GET STARTED</a>
+          </div>
+          <img src="./src/images/iphone-with-bg.png" alt="Iphone" />
+        </div>
+      </section>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
